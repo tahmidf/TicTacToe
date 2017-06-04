@@ -4,29 +4,28 @@
 <head>
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="tictactoe.css">
-
 </head>
 
-<body>
+<body class="main">
   <div class="container">
-    <h2>Tic Tac Toe</h2>
+    <h2><center>Tahmid's Tic Tac Toe</center></h2>
     <div class="box">
-      <table class="ticTable">
+      <table class="ticTable" id="ticTable">
         <tbody>
           <tr>
             <td id="0" onclick="game_play(event)" class="borderBottom borderRight"></td>
             <td id="1" onclick="game_play(event)" class="borderBottom borderRight"></td>
-            <td id="2" onclick="game_play(event)" class="borderBottom"></td>
+            <td id="2" onclick="game_play(event)" class="borderBottom borderRight"></td>
           </tr>
           <tr>
             <td id="3" onclick="game_play(event)" class="borderBottom borderRight"></td>
             <td id="4" onclick="game_play(event)" class="borderBottom borderRight"></td>
-            <td id="5" onclick="game_play(event)" class="borderBottom"></td>
+            <td id="5" onclick="game_play(event)" class="borderBottom borderRight"></td>
           </tr>
           <tr>
-            <td id="6" onclick="game_play(event)" class="borderRight"></td>
-            <td id="7" onclick="game_play(event)" class="borderRight"></td>
-            <td id="8" onclick="game_play(event)"></td>
+            <td id="6" onclick ="game_play(event)" class="borderRight borderBottom"></td>
+            <td id="7" onclick ="game_play(event)" class="borderRight borderBottom"></td>
+            <td id="8" onclick ="game_play(event)" class="borderRight borderBottom"></td>
           </tr>
         </tbody>
       </table>
@@ -38,13 +37,13 @@
       <span class="markLabel">X</span>
       <span class="markLabel">O</span>
       <br/>
-      <div class="times">Won <span class="one_times">0</span> <span class="two_times">0</span> times</div>
-      <div class="times">Lost <span class="one_times">0</span> <span class="two_times">0</span> times</div>
+      <div class="times">Won <span id = "Player_win_counter" class="one_times">0</span> <span id = "Player_win_counter3" class="two_times">0</span> times</div>
+      <div class="times">Lost <span id = "Player_win_counter2" class="one_times">0</span> <span id = "Player_win_counter4" class="two_times">0</span> times</div>
       <br/>
-      <div class="statusDiv borderBottom">Game Status</div>
-      <p>New Game</p>
+      <div class="statusDiv borderRight">Game Status</div>
+      <p id= "game_status_html" onclick = "game_play(event)" class="statusDiv borderRight borderBottom">New Game</p>
       <!-- Game Status Messages: Game in progress | Player 1 wins | Player 2 wins -->
-      <button>Restart</button>
+      <button onclick="resetbutton(event)"> Restart </button>
     </div>
   </div>
   <script type="text/javascript" src="tictactoe.js"></script>

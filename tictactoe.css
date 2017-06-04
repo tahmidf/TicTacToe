@@ -1,4 +1,7 @@
-  .ticTable td {
+.main{
+  background-color: #86CEFC;
+}
+.ticTable td {
   height: 100px;
   width: 100px;
   padding: 15px;
@@ -6,22 +9,65 @@
   text-align: center;
   cursor: pointer;
 }
+.ticTable,.ticTable1{
+  border: 2px solid white;
+  background-color: #154360;
+  margin-left: 200px;
+}
 
 .ticTable td:hover {
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: #5499C7;
+  text-shadow: 2px 1px 1px white;
+}
+.ticTable1 td {
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 3em;
+}
+
+.ticTable1 td:hover {
+  background-color: #004F81;
   text-shadow: 2px 1px 1px white;
 }
 
+.ticTable .borderBottom {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px black;
+  border-right: 1px black;
+  background: #D4E6F1;
+}
+
+.ticTable1 .borderBottom {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px black;
+  border-right: 1px black;
+  background: #D4E6F1;
+}
 .borderBottom {
   border-bottom: 1px solid black;
 }
-
 .borderRight {
   border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 10px/8px;
 }
 
 .container {
   margin: 20px;
+  width: auto;
+  min-height: inherit;
+  background-color: #86CEFC;
+  background-size: auto;
+}
+.container h2{
+  color: #1B4F72;
 }
 
 .box {
@@ -36,7 +82,8 @@
   text-align: center;
   display: inline-block;
   margin: 80px 60px;
-  background-color: rgba(128, 128, 128, 0.08);
+  background-color: #154360;
+  color: white;
 }
 
 .controls span {
@@ -48,7 +95,7 @@
 }
 
 .controls p {
-  color: grey;
+  color: white;
 }
 
 .controls button {
@@ -61,6 +108,9 @@
   border-radius: 0.3em;
 }
 
+.controls button:hover{
+  background-color: #1B4F72;
+}
 .markLabel {
   font-size: 2em;
 }
@@ -68,6 +118,7 @@
 .statusDiv {
   width: 50%;
   margin: auto;
+  color: white;
 }
 
 table {
@@ -78,10 +129,11 @@ table {
   text-align: left;
   margin-left: 30px;
   font-style: italic;
-  color: #343e35;
+  color: white;
 }
 
 .times span {
   width: 70px;
   font-style: normal;
-  font-weight: bold;}
+  font-weight: bold;
+}
